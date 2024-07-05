@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IVR Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        pre {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>IVR Project</h1>
+        <p>Este proyecto implementa un sistema IVR (Interactive Voice Response) utilizando Flask, SQLite y la API de Nexmo/Vonage.</p>
+
+        <h2>Descripción del Proyecto</h2>
+        <p>El sistema IVR permite manejar llamadas telefónicas de manera automatizada, proporcionando opciones de menú y verificaciones de código OTP.</p>
+
+        <h2>Instalación</h2>
+        <pre>
+git clone https://github.com/tu-usuario/ivr-project.git
+cd ivr-project
+pip install -r requirements.txt
+        </pre>
+
+        <h2>Uso</h2>
+        <pre>
+# Configura los archivos JSON en ivr_templates/templates.json y ivr_templates/config.json
+# Luego, ejecuta la aplicación Flask:
+python app.py
+        </pre>
+
+        <h2>Flujo de Llamadas</h2>
+        <p>El siguiente es un ejemplo de flujo de llamadas manejado por el sistema IVR:</p>
+        <ul>
+            <li>Bienvenida</li>
+            <li>Solicitud de OTP</li>
+            <li>Verificación del OTP</li>
+            <li>Confirmación del OTP</li>
+        </ul>
+    </div>
+</body>
+</html>
